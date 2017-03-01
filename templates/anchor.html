@@ -1,0 +1,69 @@
+<div class="container">
+	<div class="row">
+		<button ng-click="scrollPage('bottom')">Goto bottom</button>
+		<div style="height: 500px;overflow-y:scroll;">
+			<div id="top">
+				<h1>Installing globally:</h1>
+				<h1>Installation via npm:</h2>
+
+				<p>npm install http-server -g</p>
+				<b>This will install http-server globally so that it may be run from the command line.</b>
+
+				<p>Usage:</p>
+				<b>http-server [path] [options]
+				[path] defaults to ./public if the folder exists, and ./ otherwise.</p>
+
+				<p>Installing as a node app</p>
+				<b>mkdir myapp
+				 cd myapp/
+				 jitsu install http-server
+				If you do not have jitsu installed you can install it via npm install jitsu -g</b>
+
+				<p>Usage</p>
+				<b>Starting http-server locally
+				 node bin/http-server
+				Now you can visit http://localhost:8080 to view your server</b>
+
+
+
+
+
+			</div>
+			<div id="bottom">
+				<h2>Available Options:</h2>
+				<b>-p Port to use (defaults to 8080)</b><br>
+
+				<b>-a Address to use (defaults to 0.0.0.0)</b><br>
+
+				<b>-d Show directory listings (defaults to 'True')</b><br>
+
+				<b>-i Display autoIndex (defaults to 'True')</b><br>
+
+				<b>-e or --ext Default file extension if none supplied (defaults to 'html')</b><br>
+
+				<b>-s or --silent Suppress log messages from output</b><br>
+
+				<b>--cors Enable CORS via the Access-Control-Allow-Origin header</b><br>
+
+				<b><b>-o Open browser window after starting the server</b><br>
+
+				<b>-c Set cache time (in seconds) for cache-control max-age header, e.g. -c10 for 10 seconds (defaults to '3600'). To disable caching, use -c-1.</b><br>
+
+				<b>-U or --utc Use UTC time format in log messages.</b><br>
+
+				<b>-P or --proxy Proxies all requests which can't be resolved locally to the given url. e.g.: -Phttp://someurl.com</b><br>
+
+				<b>-S or --ssl Enable https.</b><br>
+
+				<b>-C or --cert Path to ssl cert file (default: cert.pem).</b><br>
+
+				<b>-K or --key Path to ssl key file (default: key.pem).</b><br>
+
+				<b>-r or --robots Provide a /robots.txt (whose content defaults to 'User-agent: *\nDisallow: /')</b><br>
+
+				<b>-h or --help Print this list and exit.</b><br>
+			</div>
+		</div>
+		<button ng-click="scrollPage('top')">Goto top</button>
+	</div>
+</div>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		
+		<title>Test</title>
+
+		<!-- FAVICON AND SHORT CUT ICONS-->
+		<link rel="shortcut icon" href="../img/my.jpg">
+		<link rel="icon" href="../img/my.jpg">
+
+		<!-- stylesheets Only stylesheets are included using link, provide relation between both the documents-->
+		<!-- INLINE, EXTERNAL AND INTERNAL -->
+		<link rel="stylesheet" type="text/css" href="css/master.css">
+		<link rel="stylesheet" type="text/css" href="js/bootstrap/css/bootstrap.min.css">
+
+		<!-- scripts INLINE, EXTERNAL AND INTERNAL-->
+		<script type="text/javascript" src="js/angular/angular.js"></script>
+		<script type="text/javascript" src="js/angular/angular-route.js"></script>
+		<script type="text/javascript" src="js/jquery/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+		<script type="text/javascript" src="js/controllers.js"></script>
+		<script type="text/javascript" src="js/directive.js"></script>
+		<script type="text/javascript" src="js/test.js"></script>
+
+		<!--[if lt IE-9] >
+				<script type="text/javascript" src="js/angular/angular.js"></script>
+			[endif]
+		<! -->
+	</head>
+
+	<!-- strict mode for inline array annotation/ inject property annotation  -->
+	<body ng-app="myApp">
+		<nav>
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#forms">Forms</a>
+				<li><a href="#anchor">Anchor</a></li>
+				<li><a href="#test">Test</a></li>
+				<li><a href="#event">Event</a></li>
+		    </ul>
+		</nav>
+		<div class="container">
+			<div ng-view></ng-view>
+		</div>
+		
+		<!-- <script>
+			/*var name = "",
+			checkData = "";
+			$("button").click(function(){
+				name = $("#name").val();
+				checkData = $("#check").val();
+
+				console.log(checkData);
+				
+				$("#displayName").html(name);
+				$("#checkdata").html(checkData);
+			})*/
+
+			function testArgument(data1, data2, data3){
+				console.log("Arguments length :",arguments.length);
+			}
+
+			testArgument(1,2,3);
+
+			var arr = [8, 2, 6, 9, 1];
+			var arrNames = ["Golu","abhishek","prisha","pratima","Mukesh","brishti"];
+			
+			arr.sort();
+			arrNames.sort();
+
+			console.log("Sorted array of numbers :",arr);
+			console.log("Sorted array of names :",arrNames);
+			console.log($("#name").width(), $("#name").height());
+			console.log($("#name").innerWidth(),$("#name").innerHeight());
+			console.log($("#name").hasClass("hide-content"));
+			
+			$("#name").removeClass("hide-content");
+
+			$("button").click(function(){
+				$("#name").toggleClass("content")
+			});
+
+			console.log($("#name").text("Angular!!!"));
+			console.log($("#name").html());
+		</script> -->
+	</body>
+</html>

@@ -1,0 +1,44 @@
+	<fieldset>
+		<legend>User Details</legend>
+		<form id="userForm" name="userForm" novalidate="novalidate">
+			<div class="col-md-4 col-sm-4 col-xs-12">
+				<div class="form-group">
+					<label for="Name">Name</label>
+					<input type="text" id="userName" name="userName" class="form-control" ng-model="userForm.name">
+				</div>
+				<div class="form-group">
+					<label for="Email">Email</label>
+					<input type="email" id="userEmail" name="userEmail" class="form-control" ng-model="userForm.email" ng-required>
+					<span style="color: red" ng-if="userForm.userEmail.$pristine || (userForm.userEmail.$dirty && userForm.userEmail.$error.required)">Enter email</span>
+				</div>
+				<div class="form-group">
+					<label for="Password">Password</label>
+					<input type="password" id="userPassword" name="userPassword" ng-model="userForm.password" class="form-control">
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-4 col-xs-12">
+				<div class="form-group">
+					<label for="Mobile number">Mobile number</label>
+					<input type="text" id="mobileNumber" name="mobileNumber" class="form-control" ng-model="userForm.mobile">
+				</div>
+				<div class="form-group">
+					<label for="Address">Address</label>
+					<input type="address" id="userForm.address" name="userForm.address" class="form-control" ng-model="userForm.address" required>
+				</div>
+				<div class="form-group">
+					<label for="Country">Country</label>
+					<input type="country" id="userCountry" name="userCountry" ng-model="userForm.country" class="form-control">
+				</div>
+			</div>
+		</form>	
+	</fieldset>
+
+<section>
+Section
+
+</section>
+
+<article>
+Article
+<aside>Aside</aside>
+</article>

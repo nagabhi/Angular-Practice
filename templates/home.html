@@ -1,0 +1,73 @@
+<div>
+	<div>
+		<h1 id="name" class="hide-content">Hello World!!!</h1>
+	</div>
+	<my-event events="events">
+		<ul> 
+			<li ng-repeat="eachEvent in events track by $index">{{eachEvent | uppercase}}</li>
+		</ul>
+	</my-event>
+</div>
+<div>
+	Enter Name : <input type="text"  ng-model="name" />
+	
+	<div>Name : {{ name }}</div>
+
+	Select : <input type="checkbox" ng-model="check" id="check"/>
+	<div>{{ check }}</div>
+
+	<button>Get</button>
+
+</div>
+<p>From controller</p>
+<p>Name : {{name}}</p>
+<p>Age  : {{age}}</p>
+<input class="btn btn-primary" type="button" value="Alert name" ng-click="alertName()">
+<my-button>
+	<span>Button</span>
+</my-button>
+<div>
+	<p>{{200000 | number: 2}}</p>
+</div>
+
+<p>1st: Isdcklcnlksdnckldsc</p>
+<p style="display:none;">2nd :sdjjcbhkjcjsdcsd</p>
+<p>3rd :clscksdchusdciusdchdisc</p>
+<hr>
+<div my-dir>
+	<div>Sub content - {{slNum}}</div>
+</div>
+
+<hr>
+<ul id="outer">
+	<li id="one">item 1</li>
+	<li id="two">item 2
+		<ul>
+			<li id="sub1">Sub 1</li>
+			<li id="sub2">Sub 2</li>
+		</ul>
+	</li>
+	<li id="three">item 3</li>
+	<li id="four">item 4</li>
+	<li id="five">item 5</li>
+</ul>
+
+
+<hr>
+
+<div>
+    Model Value : {{modelobject}}
+    <form name="myForm">
+      <input type="text" ng-model="modelobject" ng-model-options="{updateOn:'default', debounce: 100}">
+      <button>Confirm</button>
+    </form>
+  </div>
+<hr>
+
+<!-- <div class="outer">
+	<div class="inner">
+		Some content
+	</div>
+</div>
+
+ -->
