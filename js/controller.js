@@ -27,7 +27,7 @@ angular.module("myApp",['ngRoute'])
 
 		var nameList = [];
 		angular.forEach($scope.obj,function(value,key){
-			//$log.info("Arr loop :",key, value);
+			$log.info("Arr loop :",key, value);
 			this.push(value.name);
 		},nameList);
 		console.log(nameList);
@@ -35,7 +35,6 @@ angular.module("myApp",['ngRoute'])
 		$scope.a = angular.merge($scope.arr,$scope.otherArr);
 		console.log($scope.a);
 		console.info(angular.version);
-
 
 		console.log("----------------");
 		console.log($route.current.data);
